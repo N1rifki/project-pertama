@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+/* INDEX.HTML */
+nav {
+  display: flex;
+  background-color: rgb(147, 152, 152);
+  justify-content: end;
+  font-size: 24px;
+  gap: 40px;
+}
+nav .navigasi-bar {
+  margin: 40px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: transparent;
+  background-color: rgb(1, 32, 32);
+  width: 400px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 1em;
+}
+nav .img-nav {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+}
+.img-nav img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  margin-top: 20px;
+}
+.img-nav img:hover {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  will-change: transform, box-shadow, filter;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px 5px rgba(128, 0, 128, 0.6);
+  filter: brightness(1.3);
+}
+.img-nav img:active {
+  transform: scale(0.98); /* Memberikan efek 'tertekan' sedikit */
+  box-shadow: 0 0 25px 8px rgba(128, 0, 128, 1); /* Cahaya ungu yang lebih kuat saat klik */
+  filter: brightness(1); /* Mempertahankan kecerahan normal saat di-click */
+}
+.img-nav h1 {
+  padding: 50px;
+  letter-spacing: 10px;
+  color: rgb(8, 1, 8);
+  font-weight: 1000;
+  text-shadow: 3px 3px 5px rgb(239, 94, 236);
+}
+.img-nav i {
+  position: absolute;
+  font-size: 60px;
+}
+.img-nav h1:hover {
+  cursor: pointer;
+  color: purple;
+  text-shadow: 3px 4px 5px black;
+}
+.navigasi-bar:hover {
+  /* transform: scale(1.2deg);
+  background-color: transparent;
+  box-shadow: 0px 0px 50px black, 0px 0px 30px black, 0px 0px 10px black; */
+
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Transisi lebih halus */
+  will-change: transform, box-shadow, filter; /* Memberi tahu browser untuk mengoptimalkan animasi */
+  transform: scale(1.1); /* Membesar lebih sedikit agar lebih smooth */
+  box-shadow: 0 0 15px 5px rgba(128, 0, 128, 0.6); /* Cahaya ungu yang lebih halus */
+  filter: brightness(1.3); /* Kecerahan lebih halus */
+}
+
+.navigasi-bar:active {
+  transform: scale(0.98); /* Memberikan efek 'tertekan' sedikit */
+  box-shadow: 0 0 25px 8px rgba(128, 0, 128, 1); /* Cahaya ungu yang lebih kuat saat klik */
+  filter: brightness(1); /* Mempertahankan kecerahan normal saat di-click */
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 80px auto;
+  width: 700px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize;
+  line-height: 1.5;
+  gap: 30px;
+}
+header span {
+  display: inline-block;
+  color: rgb(8, 1, 8);
+  font-size: 1.6em;
+  text-transform: capitalize;
+  text-shadow: 3px 3px 5px rgb(239, 94, 236);
+  letter-spacing: 10px;
+}
+header p {
+  text-align: center;
+  font-family: "Potta One", system-ui;
+}
+
+.h1 {
+  margin: 50px;
+  border-radius: 1em;
+  font-size: 2em;
+  color: white;
+  text-transform: uppercase;
+  height: 200px;
+  padding: 30px;
+  background-color: rgb(78, 4, 78);
+}
+header .btn {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  /* background-color: cyan; */
+  justify-content: center;
+}
+.btn .bxl {
+  margin: 20px;
+  padding: 20px;
+  border: none;
+  width: 500px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: black;
+  border-radius: 0.6em;
+  letter-spacing: 4px;
+  background-color: transparent;
+  background-color: black;
+  color: white;
+}
+.btn .bxl:hover {
+  /* cursor: pointer;
+  background-color: transparent;
+  color: black;
+  box-shadow: 0px 0px 50px black, 0px 0px 30px black, 0px 0px 10px black;
+  color: black;
+  text-shadow: 3px 3px 5px rgb(239, 94, 236); */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Transisi lebih halus */
+  will-change: transform, box-shadow, filter; /* Memberi tahu browser untuk mengoptimalkan animasi */
+  transform: scale(1.1); /* Membesar lebih sedikit agar lebih smooth */
+  box-shadow: 0 0 15px 5px rgba(128, 0, 128, 0.6); /* Cahaya ungu yang lebih halus */
+  filter: brightness(1.3); /* Kecerahan lebih halus */
+}
+.icons {
+  display: flex;
+  padding: 40px;
+  align-items: flex-end;
+  font-size: 70px;
+  gap: 20px;
+  width: 100%;
+  height: 300px;
+  /* background-color: cyan; */
+  justify-content: center;
+}
+.icons i {
+  font-size: 70px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Transisi lebih halus */
+  will-change: transform, box-shadow, filter; /* Memberi tahu browser untuk mengoptimalkan animasi */
+}
+
+/* Efek saat hover */
+.icons i:hover {
+  transform: scale(1.12); /* Membesar lebih sedikit agar lebih smooth */
+  box-shadow: 0 0 15px 5px rgba(128, 0, 128, 0.6); /* Cahaya ungu yang lebih halus */
+  filter: brightness(1.3); /* Kecerahan lebih halus */
+}
+
+/* Efek saat di-click */
+.icons i:active {
+  transform: scale(0.98); /* Memberikan efek 'tertekan' sedikit */
+  box-shadow: 0 0 25px 8px rgba(128, 0, 128, 1); /* Cahaya ungu yang lebih kuat saat klik */
+  filter: brightness(1); /* Mempertahankan kecerahan normal saat di-click */
+}
+/* END INDEX.HTML */
+
+/* View-More.html */
+
+.heading-biodata {
+  /* background-color: red; */
+  margin-top: 30px;
+  padding: 30px;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+/* BIODATA */
+
+.biodata {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  /* background-color: cyan; */
+}
+.biodata table {
+  /* background-color: red; */
+  margin: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.biodata td {
+  padding: 10px;
+  margin: 20px;
+  font-size: 25px;
+}
+.biodata img {
+  background-size: cover; /* Mengatur gambar agar mengisi seluruh area tanpa terdistorsi */
+  background-position: center center; /* Menjaga gambar tetap terpusat di tengah */
+  background-attachment: fixed; /* Agar background tetap di tempat saat scroll (opsional) */
+  height: 500px; /* Membuat elemen memiliki tinggi penuh dari viewport */
+  margin: 0;
+  background-size: contain;
+  border-radius: 50%;
+  margin: 20px;
+  background-repeat: no-repeat;
+}
+.biodata .hd-biodata {
+  text-align: center;
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+/* MY-PROFIL.HTML */
+
+.img-profil {
+  display: flex;
+  flex-direction: column;
+  /* background-color: cyan;font-family: "Kaushan Script", cursive; */
+  width: 100%;
+  padding: 30px 30px;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+.img-profil .name,
+.nama {
+  font-size: 40px;
+  margin: 10px;
+  color: transparent;
+  background-clip: text;
+  animation: warna 4s infinite linear;
+  font-family: "Kaushan Script", cursive;
+}
+
+@keyframes warna {
+  0% {
+    background-image: linear-gradient(45deg, red, rgb(43, 255, 0), yellow);
+  }
+  25% {
+    background-image: linear-gradient(45deg, blue, indigo, violet);
+  }
+  50% {
+    background-image: linear-gradient(45deg, green, lime, aqua);
+  }
+  75% {
+    background-image: linear-gradient(45deg, purple, fuchsia, pink);
+  }
+  100% {
+    background-image: linear-gradient(45deg, red, orange, yellow);
+  }
+}
+.img-profil p {
+  /* background-color: rgb(255, 21, 0); */
+  width: 50%;
+  height: 400px;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.img-profil .img-profil-efek {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6), 0 0 15px rgba(128, 0, 128, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.img-profil .img-profil-efek:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8), 0 0 20px rgba(128, 0, 128, 0.5);
+}
+
+.img-profil .img-profil-efek:active {
+  /* Memperbesar gambar saat diklik */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1), 0 0 25px rgba(128, 0, 128, 1);
+  filter: brightness(0.7);
+}
+
+
+
+/* LOCATION.HTML */
+
+.my-lokasi{
+  /* background-color: #00c3ff; */
+  height: 900px;
+  margin: 20px;
+  padding: 45px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.my-lokasi .name-lokacation{
+  font-size: 40px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 400px;
+}
+
+.my-lokasi iframe{
+  box-shadow: 3px 3px 7px black;
+  border-radius: 15px;
+}
+.my-lokasi iframe:hover{
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8), 0 0 20px rgba(128, 0, 128, 0.5);
+}
+.my-lokasi iframe:active{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1), 0 0 25px rgba(128, 0, 128, 1);
+  filter: brightness(0.7);
+
+}
